@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GOTCHA!</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@400;500;700&display=swap" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Geist Sans', sans-serif;
+      background: linear-gradient(to right, #3E497D 15%, #394064 100%);
+      color: white;
+    }
+
+    .alert-icon {
+      position: absolute;
+      left: 450px;
+      top: -20px;
+      width: 400px;
+      height: 350px;
+      transform: rotate(10deg);
+      z-index: 0;
+    }
+
+    .header {
+      position: relative;
+      z-index: 30;
+      margin-left: 40px;
+      margin-top: 40px;
+      width: 600px;
+    }
+
+    .header h1 {
+      font-size: 100px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .header p {
+      margin-left: 8px;
+      font-size: 1.125rem;
+      margin-top: -10px;
+      font-weight: 400;
+    }
+
+    .tips-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 48px;
+      margin-top: 40px;
+      z-index: 30;
+      position: relative;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .tip-box {
+      width: 550px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tip-box h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+    }
+
+    .tip-box p {
+      margin-top: 12px;
+      font-size: 1.125rem;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+
+  <svg class="alert-icon" fill="none" stroke="#6b78b5" stroke-width="2" viewBox="0 0 24 24">
+    <path d="M10.29 3.86L1.82 18a1.91 1.91 0 0 0 1.71 2.86h16.94A1.91 1.91 0 0 0 22.18 18L13.71 3.86a1.91 1.91 0 0 0-3.42 0z"/>
+    <line x1="12" y1="9" x2="12" y2="13"/>
+    <circle cx="12" cy="17" r="1.2" fill="#6b78b5" stroke="none"/>
+  </svg>
+
+  <div class="header">
+    <h1>GOTCHA!</h1>
+    <p>You have just been tricked by a phishing simulation email by PhishCamp! Here's how to prevent being vulnerable to attacks in the future!</p>
+  </div>
+
+  <div class="tips-container">
+    <div class="tip-box">
+      <h1>1. Verify the Sender</h1>
+      <p>- Were you expecting this email? If not, verify the sender by contacting them through a known good communication channel and verify that they sent the email.</p>
+      <p>- Pay attention to the address you received the email from. It may look like a legitimate sender at first glance, however, phishing emails often come from email addresses with slight inconsistencies.</p>
+    </div>
+    <div class="tip-box">
+      <h1>2. Look for Urgent or Suspicious Requests in Emails</h1>
+      <p>- Phishers often create a sense of urgency, asking you to "act immediately" or "verify your account now" to avoid penalties. Do not rush into taking any action, most often, emails that encourage you to take rushed action are malicious.</p>
+      <p>- Do not be intimidated by an email that exerts a large amount of authority. If the email attempts to make you feel like it was sent by an authority figure, stop and double check the sender. Find another way to verify the legitimacy of the email.</p>
+    </div>
+    <div class="tip-box">
+      <h1>3. Check All Embedded Links</h1>
+      <p>- Hover over a link (without clicking) to preview the actual URL and ensure it matches the official site. If the link does not contain the official domain of the supposed "sender", do not click on it until you have positively verified the sender of the email
